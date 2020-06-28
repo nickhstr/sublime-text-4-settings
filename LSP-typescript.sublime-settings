@@ -1,0 +1,53 @@
+// Settings in here override those in "LSP-typescript/LSP-typescript.sublime-settings"
+
+{
+    "languages": [
+        {
+            "languageId": "javascript",
+            "scopes": [
+                "source.js",
+                "source.jsx",
+                "source.js.react",
+                "source.js.unittest"
+            ],
+            "syntaxes": [
+                "Packages/JavaScript/JavaScript.sublime-syntax",
+                "Packages/zzz A File Icon zzz/aliases/JavaScript (Webpack).sublime-syntax",
+                "Packages/zzz A File Icon zzz/aliases/JavaScript (ESLint).sublime-syntax",
+                "Packages/zzz A File Icon zzz/aliases/UnitTest (JavaScript).sublime-syntax",
+                "Packages/User/JS Custom/Syntaxes/Babel.sublime-syntax",
+                "Packages/User/JS Custom/Syntaxes/React.sublime-syntax"
+            ]
+        },
+        {
+            "languageId": "typescript",
+            "scopes": [
+                "source.ts",
+                "source.ts.unittest"
+            ],
+            "syntaxes": [
+                "Packages/TypeScript Syntax/TypeScript.tmLanguage",
+                "Packages/zzz A File Icon zzz/aliases/UnitTest (TypeScript).sublime-syntax"
+            ]
+        },
+        {
+            "languageId": "typescriptreact",
+            "scopes": [
+                "source.tsx",
+                "source.ts.react",
+                "source.ts.unittest"
+            ],
+            "syntaxes": [
+                "Packages/TypeScript Syntax/TypeScriptReact.tmLanguage",
+                "Packages/zzz A File Icon zzz/aliases/UnitTest (TypeScript React).sublime-syntax"
+            ]
+        }
+    ],
+    "settings": {
+        "javascript": {
+            "validate": {
+                "enable": false
+            }
+        }
+    }
+}

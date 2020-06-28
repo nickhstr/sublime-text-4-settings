@@ -1,0 +1,55 @@
+{
+	"always_show_minimap_viewport": true,
+	"caret_style": "blink",
+	"binary_file_patterns":
+	[
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip",
+		"*/dist/*",
+		"*/.cache/*",
+		"*/.git/*",
+		"*/node_modules/*",
+		"*/es/*",
+		"*/lib/*",
+		"*/vendor/*"
+	],
+	"close_windows_when_empty": false,
+	"color_scheme": "Packages/Color Scheme - Default/Mariana.sublime-color-scheme",
+	"find_selected_text": true,
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		".golangci-*",
+		".golangcilint-*",
+		".gometalinter-*"
+	],
+	"hot_exit": false,
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"open_files_in_new_window": false,
+	"scroll_past_end": true,
+	"show_line_endings": true,
+	"theme": "Adaptive.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+}

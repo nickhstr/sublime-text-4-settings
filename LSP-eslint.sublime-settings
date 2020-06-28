@@ -1,0 +1,31 @@
+// Settings in here override those in "LSP-eslint/LSP-eslint.sublime-settings"
+
+{
+    "languages": [
+        {
+            "languageId": "eslint",
+            "scopes": [
+                "source.js",
+                "source.jsx",
+                "source.js.react",
+                "source.js.unittest",
+                "source.ts",
+                "source.tsx",
+                "source.ts.react",
+                "source.ts.unittest"
+            ],
+            "syntaxes": [
+                "Packages/JavaScript/JavaScript.sublime-syntax",
+                "Packages/zzz A File Icon zzz/aliases/JavaScript (Webpack).sublime-syntax",
+                "Packages/zzz A File Icon zzz/aliases/JavaScript (ESLint).sublime-syntax",
+                "Packages/zzz A File Icon zzz/aliases/UnitTest (JavaScript).sublime-syntax",
+                "Packages/User/JS Custom/Syntaxes/Babel.sublime-syntax",
+                "Packages/User/JS Custom/Syntaxes/React.sublime-syntax",
+                "Packages/TypeScript Syntax/TypeScript.tmLanguage",
+                "Packages/zzz A File Icon zzz/aliases/UnitTest (TypeScript).sublime-syntax",
+                "Packages/TypeScript Syntax/TypeScriptReact.tmLanguage",
+                "Packages/zzz A File Icon zzz/aliases/UnitTest (TypeScript React).sublime-syntax"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "auto_show_diagnostics_panel": "never",
+    "clients":
+    {
+        "gopls":
+        {
+            "command":
+            [
+                "gopls"
+            ],
+            "enabled": true,
+            "languageId": "go",
+            "scopes":
+            [
+                "source.go"
+            ],
+            "syntaxes":
+            [
+                "Packages/Go/Go.sublime-syntax"
+            ]
+        },
+        "pyls":
+        {
+            "command":
+            [
+                "pyls"
+            ],
+            "enabled": true,
+            "languageId": "python",
+            "scopes":
+            [
+                "source.python"
+            ],
+            "settings":
+            {
+                "pyls":
+                {
+                    "plugins":
+                    {
+                        "pyls_mypy":
+                        {
+                            "enabled": true
+                        }
+                    }
+                }
+            },
+            "syntaxes":
+            [
+                "Packages/Python/Python.sublime-syntax",
+                "Packages/MagicPython/grammars/MagicPython.tmLanguage",
+                "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+            ]
+        },
+        "rls":
+        {
+            "enabled": false
+        },
+        "rust-analyzer":
+        {
+            "enabled": true
+        }
+    },
+    "diagnostics_highlight_style": "box",
+    "disabled_capabilities":
+    [
+        "colorProvider",
+        "documentHighlight"
+    ],
+    "show_diagnostics_count_in_view_status": true,
+    "show_diagnostics_in_view_status": false,
+    "show_references_in_quick_panel": true,
+    "show_view_status": false
+}

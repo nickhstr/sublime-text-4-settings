@@ -1,0 +1,18 @@
+{
+    "configurations": {
+        "Babel": {
+            "file_extensions": ["js", "mjs"],
+            "hidden": false,
+            "jsx": true,
+            "name": "JavaScript (Babel)",
+            "scope": "source.js"
+        },
+        "React": {
+            "file_extensions": ["jsx"],
+            "hidden": false,
+            "jsx": true,
+            "name": "JavaScript (React)",
+            "scope": "source.js.react"
+        }
+    }
+}
