@@ -27,5 +27,29 @@
                 "Packages/zzz A File Icon zzz/aliases/UnitTest (TypeScript React).sublime-syntax"
             ]
         }
-    ]
+    ],
+    "settings": {
+        "validate": "on",
+        "packageManager": "npm",
+        "options": {},
+        "run": "onType",
+        "nodePath": null,
+        "format": false,
+        "quiet": false,
+        "onIgnoredFiles": "off",
+        "codeAction": {
+            "disableRuleComment": {
+                "enable": true,
+                "location": "separateLine"
+            },
+            "showDocumentation": {
+                "enable": true
+            }
+        },
+        "codeActionOnSave": {
+            "enable": true,
+            "mode": "all",
+            "source.fixAll.eslint": true
+        }
+    }
 }

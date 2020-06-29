@@ -1,0 +1,26 @@
+[
+    { "keys": ["enter"], "command": "insert_snippet", "args": {"contents": "\n\t$0\n"}, "context":
+        [
+            { "key": "setting.auto_indent", "operator": "equal", "operand": true },
+            { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+            { "key": "preceding_text", "operator": "regex_contains", "operand": "[\\(\\[]$", "match_all": true },
+            { "key": "following_text", "operator": "regex_contains", "operand": "^[\\)\\]]", "match_all": true }
+        ]
+    },
+    { "keys": ["super+v"], "command": "paste_and_indent" },
+    { "keys": ["super+shift+v"], "command": "paste" },
+    { "keys": ["super+option+h"], "command": "lsp_hover" },
+    { "keys": ["super+option+i"], "command": "lsp_symbol_definition" },
+    { "keys": ["super+option+shift+i"], "command": "lsp_symbol_references" },
+    // Show/Hide Diagnostics Panel
+    { "keys": ["super+alt+m"], "command": "lsp_show_diagnostics_panel", "context": [{"key": "setting.lsp_active"}]},
+    {
+        "keys": ["ctrl+i"],
+        "command": "afn_show_filenames",
+        "context": {
+            "key": "afn_use_keybinding",
+            "operator": "equal",
+            "operand": "true"
+        }
+    }
+]

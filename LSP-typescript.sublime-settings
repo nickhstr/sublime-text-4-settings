@@ -42,12 +42,5 @@
                 "Packages/zzz A File Icon zzz/aliases/UnitTest (TypeScript React).sublime-syntax"
             ]
         }
-    ],
-    "settings": {
-        "javascript": {
-            "validate": {
-                "enable": false
-            }
-        }
-    }
+    ]
 }

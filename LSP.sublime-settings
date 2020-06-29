@@ -66,6 +66,11 @@
         "colorProvider",
         "documentHighlight"
     ],
+    "lsp_code_actions_on_save": {
+        "source.fixAll": true,
+        "source.organizeImports": true
+    },
+    "lsp_format_on_save": true,
     "show_diagnostics_count_in_view_status": true,
     "show_diagnostics_in_view_status": false,
     "show_references_in_quick_panel": true,
