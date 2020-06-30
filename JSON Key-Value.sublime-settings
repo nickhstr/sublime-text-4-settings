@@ -1,6 +1,8 @@
 {
 	"extensions":
 	[
-		"json"
-	]
+		"json",
+		"sublime-settings",
+		"sublime-project",
+	],
 }

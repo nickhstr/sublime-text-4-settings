@@ -2,12 +2,15 @@
 	"bootstrapped": true,
 	"installed_packages":
 	[
+		"Debugger",
 		"DocBlockr 2020 (DoxyDoxygen powered)",
 		"Dockerfile Syntax Highlighting",
 		"DotENV",
 		"EditorConfig",
 		"FileDiffs",
 		"FileIcons",
+		"Gofmt",
+		"Gomod",
 		"Handlebars",
 		"JSCustom",
 		"JSON Key-Value",
@@ -18,7 +21,6 @@
 		"LSP-json",
 		"LSP-stylelint",
 		"LSP-typescript",
-		"MarkdownTOC",
 		"Package Control",
 		"Sass",
 		"SideBarEnhancements",

@@ -70,7 +70,7 @@
         "source.fixAll": true,
         "source.organizeImports": true
     },
-    "lsp_format_on_save": true,
+    "lsp_format_on_save": false,
     "show_diagnostics_count_in_view_status": true,
     "show_diagnostics_in_view_status": false,
     "show_references_in_quick_panel": true,
