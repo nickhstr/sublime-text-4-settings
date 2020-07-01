@@ -9,14 +9,29 @@
                 "gopls"
             ],
             "enabled": true,
-            "languageId": "go",
-            "scopes":
+            "languages":
             [
-                "source.go"
-            ],
-            "syntaxes":
-            [
-                "Packages/Go/Go.sublime-syntax"
+                {
+                    "languageId": "go",
+                    "scopes":
+                    [
+                        "source.go"
+                    ]
+                },
+                {
+                    "languageId": "gomod",
+                    "scopes":
+                    [
+                        "source.gomod"
+                    ]
+                },
+                {
+                    "languageId": "gosum",
+                    "scopes":
+                    [
+                        "source.gosum"
+                    ]
+                }
             ]
         },
         "pyls":
@@ -43,13 +58,7 @@
                         }
                     }
                 }
-            },
-            "syntaxes":
-            [
-                "Packages/Python/Python.sublime-syntax",
-                "Packages/MagicPython/grammars/MagicPython.tmLanguage",
-                "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
-            ]
+            }
         },
         "rls":
         {
