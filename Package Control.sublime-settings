@@ -28,6 +28,7 @@
 		"SideBarEnhancements",
 		"SublimeLinter",
 		"SublimeLinter-golangcilint",
+		"TOML",
 		"TypeScript Syntax",
 		"URLEncode",
 	],
