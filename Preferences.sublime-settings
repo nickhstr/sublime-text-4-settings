@@ -38,7 +38,7 @@
 		".gometalinter-*"
 	],
 	"hardware_acceleration": "opengl",
-	"hot_exit": false,
+	"hot_exit": "disabled",
 	"indent_guide_options":
 	[
 		"draw_normal",
@@ -55,4 +55,16 @@
 		"Vintage",
 	],
 	"font_size": 12,
+	"added_words":
+	[
+		"monorepo",
+		"utils",
+		"Redux",
+		"Koa",
+		"github",
+		"repo",
+		"dev",
+		"Moonracer",
+		"wxu",
+	],
 }

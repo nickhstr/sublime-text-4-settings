@@ -3,9 +3,9 @@
 	"installed_packages":
 	[
 		"Debugger",
-		"DocBlockr 2020 (DoxyDoxygen powered)",
 		"Dockerfile Syntax Highlighting",
 		"DotENV",
+		"DoxyDoxygen (evolution)",
 		"EditorConfig",
 		"FileDiffs",
 		"FileIcons",
