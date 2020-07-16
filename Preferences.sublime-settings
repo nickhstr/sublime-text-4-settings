@@ -1,6 +1,6 @@
 {
 	"always_show_minimap_viewport": true,
-	"caret_style": "blink",
+	"caret_style": "smooth",
 	"binary_file_patterns":
 	[
 		"*.jpg",

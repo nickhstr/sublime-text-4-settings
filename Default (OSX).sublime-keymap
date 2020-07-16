@@ -11,16 +11,5 @@
     { "keys": ["super+shift+v"], "command": "paste" },
     { "keys": ["super+option+h"], "command": "lsp_hover" },
     { "keys": ["super+option+i"], "command": "lsp_symbol_definition" },
-    { "keys": ["super+option+shift+i"], "command": "lsp_symbol_references" },
-    // Show/Hide Diagnostics Panel
-    { "keys": ["super+alt+m"], "command": "lsp_show_diagnostics_panel", "context": [{"key": "setting.lsp_active"}]},
-    {
-        "keys": ["ctrl+i"],
-        "command": "afn_show_filenames",
-        "context": {
-            "key": "afn_use_keybinding",
-            "operator": "equal",
-            "operand": "true"
-        }
-    }
+    { "keys": ["super+option+shift+i"], "command": "lsp_symbol_references" }
 ]
