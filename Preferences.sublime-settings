@@ -51,7 +51,6 @@
 	"translate_tabs_to_spaces": true,
 	"ignored_packages":
 	[
-		"Debugger",
 		"Vintage",
 	],
 	"font_size": 12,
