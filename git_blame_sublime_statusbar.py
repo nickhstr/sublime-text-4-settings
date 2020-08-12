@@ -113,7 +113,7 @@ def time_between(date):
     delta = now - blame_date
 
     years = floor(abs(delta.days / 365))
-    months = round(abs(delta.days / 30))
+    months = floor(abs(delta.days / 30))
     days = abs(delta.days)
     hours = floor(abs(delta.seconds / 60 / 60))
     minutes = floor(abs(delta.seconds / 60))
