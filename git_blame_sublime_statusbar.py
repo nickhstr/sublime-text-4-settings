@@ -112,13 +112,14 @@ def time_between(date):
     blame_date = datetime.strptime(date, "%Y-%m-%d %H:%M:%S")
     delta = now - blame_date
 
-    years = floor(abs(delta.days / 365))
+    years = round(abs(delta.days / 365))
     months = floor(abs(delta.days / 30))
     days = abs(delta.days)
     hours = floor(abs(delta.seconds / 60 / 60))
     minutes = floor(abs(delta.seconds / 60))
 
-    if years > 0:
+    # only use 'years' arond the two-year mark
+    if months > 24:
         return "{0} {1} ago".format(years, 'years' if years > 1 else 'year')
     if months > 0:
         return "{0} {1} ago".format(months, 'months' if months > 1 else 'month')
