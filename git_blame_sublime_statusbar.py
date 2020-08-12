@@ -110,19 +110,31 @@ def time_between(date):
     """
     now = datetime.now()
     blame_date = datetime.strptime(date, "%Y-%m-%d %H:%M:%S")
+
     delta = now - blame_date
+    print("delta.days: {}".format(delta.days))
 
-    years = round(abs(delta.days / 365))
-    months = floor(abs(delta.days / 30))
-    days = abs(delta.days)
-    hours = floor(abs(delta.seconds / 60 / 60))
     minutes = floor(abs(delta.seconds / 60))
+    hours = round(abs(delta.seconds / 60 / 60))
+    days = round(abs(delta.days) + (abs(delta.seconds) / 60 / 60 / 24))
+    weeks = round(abs(days / 7))
+    months = round(abs(days / 30))
+    years = round(abs(delta.days / 365))
 
-    # only use 'years' arond the two-year mark
+    print("delta.seconds: {}".format(delta.seconds))
+    print("days: {}".format(days))
+
+    print()
+
+    # use 'years' arond the two-year mark
     if months > 24:
         return "{0} {1} ago".format(years, 'years' if years > 1 else 'year')
-    if months > 0:
+    # use 'months' around the two-month mark
+    if days > 60:
         return "{0} {1} ago".format(months, 'months' if months > 1 else 'month')
+    # use 'weeks' around the four-week mark
+    if days > 28:
+        return "{0} {1} ago".format(weeks, 'weeks' if weeks > 1 else 'week')
     if days > 0:
         return "{0} {1} ago".format(days, 'days' if days > 1 else 'day')
     if hours > 0:
