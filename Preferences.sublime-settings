@@ -65,5 +65,14 @@
 		"dev",
 		"Moonracer",
 		"wxu",
+		"json",
+		"https",
+		"params",
+	],
+	"ignored_words":
+	[
+		"Mongo",
+		"api",
+		"v1",
 	],
 }
