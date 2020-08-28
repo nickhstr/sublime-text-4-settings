@@ -68,6 +68,8 @@
 		"json",
 		"https",
 		"params",
+		"middleware",
+		"microservices",
 	],
 	"ignored_words":
 	[
