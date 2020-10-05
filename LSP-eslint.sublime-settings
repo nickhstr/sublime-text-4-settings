@@ -3,41 +3,95 @@
 {
     "languages": [
         {
-            "languageId": "eslint",
-            "scopes": [
-                "source.js",
-                "source.jsx",
-                "source.js.react",
-                "source.js.unittest",
-                "source.ts",
-                "source.tsx",
-                "source.ts.react",
-                "source.ts.unittest"
-            ]
-        }
+            "languageId": "javascriptreact",
+            "document_selector": "source.jsx | source.js.react",
+        },
+        {
+            "languageId": "javascript",
+            "document_selector": "source.js",
+        },
+        {
+            "languageId": "typescriptreact",
+            "document_selector": "source.tsx | source.ts.react",
+        },
+        {
+            "languageId": "typescript",
+            "document_selector": "source.ts",
+        },
+        {
+            "languageId": "vue",
+            "document_selector": "text.html.vue",
+        },
+        {
+            "languageId": "html",
+            "document_selector": "text.html.basic",
+        },
     ],
     "settings": {
-        "validate": "on",
-        "packageManager": "npm",
-        "options": {},
-        "run": "onType",
-        "nodePath": null,
-        "format": false,
-        "quiet": false,
-        "onIgnoredFiles": "off",
-        "codeAction": {
-            "disableRuleComment": {
-                "enable": true,
-                "location": "separateLine"
-            },
-            "showDocumentation": {
-                "enable": true
-            }
-        },
-        "codeActionOnSave": {
+        "codeAction.disableRuleComment": {
+            // Show the disable code actions.
             "enable": true,
-            "mode": "all",
-            "source.fixAll.eslint": true
-        }
-    }
+            // Configure the disable rule code action to insert the comment on the `sameLine` or `separateLine`.
+            "location": "separateLine"
+        },
+        "codeAction.showDocumentation": {
+            // Show the documentation code actions.
+            "enable": true
+        },
+        "codeActionOnSave.enable": true,
+        // Specifies the code action mode. Possible values are 'all' and 'problems'.
+        "codeActionOnSave.mode": "all",
+        // Deprecated. Recommended to use the global LSP option `lsp_code_actions_on_save` with the.
+        // `"source.fixAll.eslint": true` key instead.
+        "format": false,
+        // A path added to NODE_PATH when resolving the eslint module (auto-detected by default).
+        "nodePath": null,
+        // Whether ESLint should issue a warning on ignored files.
+        // Possible values: `warn`, `off`
+        "onIgnoredFiles": "off",
+        // The eslint options object to provide args normally passed to eslint when
+        // executed from a command line (see https://eslint.org/docs/developer-guide/nodejs-api#cliengine).
+        "options": {},
+        // The package manager you use to install node modules.
+        // Possible values: `npm`, `yarn`, `pnpm`
+        "packageManager": "npm",
+        // An array of language ids for which the plugin should probe if support is installed.
+        "probe": [
+            "javascript",
+            "javascriptreact",
+            "typescript",
+            "typescriptreact",
+            "html",
+            "vue",
+            "markdown",
+        ],
+        // Turns on quiet mode, which ignores warnings.
+        "quiet": false,
+        // Run the linter on save or on type.
+        // Possible values: `onSave`, `onType`
+        "run": "onType",
+        // An array of language ids which should be validated by ESLint.
+        "validate": [
+            "javascript",
+            "javascriptreact",
+            "typescript",
+            "typescriptreact",
+        ],
+        // An optional list of working directories or a setting on how those are auto-resolved.
+        //
+        // This setting will normally only be set per-project to provide a list of working
+        // directories. The server will consider those as bases for resolving the eslint configuration.
+        //
+        // Refer to the `eslint.workingDirectories` documentation at https://github.com/Microsoft/vscode-eslint
+        // for more info.
+        //
+        // NOTE that the `{ "pattern": glob pattern }` variant is not supported in LSP-eslint.
+        // "workingDirectories": null
+    },
+    "env": {
+        // Enables ESLint debug mode
+        // "DEBUG": "eslint:*,-eslint:code-path",
+        // The value of NODE_ENV to use when running eslint tasks.
+        // "NODE_ENV": "production",
+    },
 }
