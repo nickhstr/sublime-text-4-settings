@@ -1,16 +1,13 @@
 {
-    "auto_show_diagnostics_panel": "never",
-    "clients":
-    {
-        "gopls":
-        {
-            "command":
-            [
+    "auto_show_diagnostics_panel": "saved",
+    "auto_show_diagnostics_panel_level": 2,
+    "clients": {
+        "gopls": {
+            "command": [
                 "gopls"
             ],
             "enabled": true,
-            "languages":
-            [
+            "languages": [
                 {
                     "languageId": "go",
                     "document_selector": "source.go"
@@ -20,10 +17,8 @@
                 }
             ]
         },
-        "pyls":
-        {
-            "command":
-            [
+        "pyls": {
+            "command": [
                 "pyls"
             ],
             "enabled": true,
@@ -32,35 +27,29 @@
                     "languageId": "python"
                 }
             ],
-            "settings":
-            {
-                "pyls":
-                {
-                    "plugins":
-                    {
-                        "pyls_mypy":
-                        {
+            "settings": {
+                "pyls": {
+                    "plugins": {
+                        "pyls_mypy": {
                             "enabled": true
                         }
                     }
                 }
             }
         },
-        "rls":
-        {
+        "rls": {
             "enabled": false
         },
-        "rust-analyzer":
-        {
+        "rust-analyzer": {
             "enabled": true
         }
     },
     "diagnostics_highlight_style": "box",
-    "disabled_capabilities":
-    [
+    "disabled_capabilities": [
         "colorProvider",
         "documentHighlight"
     ],
+    "document_highlight_style": "box",
     "lsp_code_actions_on_save": {
         "source.fixAll": true,
         "source.organizeImports": true
@@ -68,6 +57,7 @@
     "lsp_format_on_save": false,
     "show_diagnostics_count_in_view_status": true,
     "show_diagnostics_in_view_status": false,
+    "show_diagnostics_severity_level": 3,
     "show_references_in_quick_panel": true,
-    "show_view_status": false
+    "show_view_status": true
 }
