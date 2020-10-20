@@ -38,7 +38,6 @@
 		".gometalinter-*"
 	],
 	"hardware_acceleration": "opengl",
-	"hot_exit": "disabled",
 	"indent_guide_options":
 	[
 		"draw_normal",

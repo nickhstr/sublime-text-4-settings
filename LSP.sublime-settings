@@ -21,7 +21,7 @@
             "command": [
                 "pyls"
             ],
-            "enabled": true,
+            "enabled": false,
             "languages": [
                 {
                     "languageId": "python"
