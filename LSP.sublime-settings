@@ -17,26 +17,6 @@
                 }
             ]
         },
-        "pyls": {
-            "command": [
-                "pyls"
-            ],
-            "enabled": false,
-            "languages": [
-                {
-                    "languageId": "python"
-                }
-            ],
-            "settings": {
-                "pyls": {
-                    "plugins": {
-                        "pyls_mypy": {
-                            "enabled": true
-                        }
-                    }
-                }
-            }
-        },
         "rls": {
             "enabled": false
         },
