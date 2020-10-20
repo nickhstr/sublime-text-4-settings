@@ -28,8 +28,6 @@ def parse_blame(blame):
     """
     user, date = '', ''
 
-    print(blame)
-
     # match full date and time (ISO date pattern)
     # datetime_pattern = r'\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}'
     # match relative datetime
