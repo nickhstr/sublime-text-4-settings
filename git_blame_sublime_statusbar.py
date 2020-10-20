@@ -28,16 +28,18 @@ def parse_blame(blame):
     """
     user, date = '', ''
 
+    print(blame)
+
     # match full date and time (ISO date pattern)
     # datetime_pattern = r'\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}'
     # match relative datetime
-    datetime_pattern = r'\d+\s\w+\sago'
+    datetime_pattern = r'\d+[\s\w,]+\sago'
     # match user name, preceded by `(`, and followed by a date
-    user_pattern = rf'(?<=\()[\w\- ]+(?=({datetime_pattern}))'
+    user_pattern = r'(?<=\()([a-z\-\s]+|[a-z\d-]+)\s(?=(\d+[\s\w,]+\sago))'
     # match the user name when a line change has not been committed yet
     not_committed_pattern = 'Not Committed Yet'
 
-    user_match = re.search(user_pattern, blame)
+    user_match = re.search(user_pattern, blame, re.IGNORECASE)
     not_committed_match = re.search(not_committed_pattern, blame)
     datetime_match = re.search(datetime_pattern, blame)
 
