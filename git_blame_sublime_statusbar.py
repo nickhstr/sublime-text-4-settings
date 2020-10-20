@@ -28,12 +28,14 @@ def parse_blame(blame):
     """
     user, date = '', ''
 
+    # match full date and time (ISO date pattern)
+    # datetime_pattern = r'\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}'
+    # match relative datetime
+    datetime_pattern = r'\d+\s\w+\sago'
     # match user name, preceded by `(`, and followed by a date
-    user_pattern = r'(?<=\()[\w\- ]+(?=(\d{4}-\d{2}-\d{2}))'
+    user_pattern = rf'(?<=\()[\w\- ]+(?=({datetime_pattern}))'
     # match the user name when a line change has not been committed yet
     not_committed_pattern = 'Not Committed Yet'
-    # match full date and time
-    datetime_pattern = r'\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}'
 
     user_match = re.search(user_pattern, blame)
     not_committed_match = re.search(not_committed_pattern, blame)
@@ -62,7 +64,7 @@ def get_blame(line, path):
     :rtype:     str
     """
     try:
-        return check_output(['git', 'blame', '--minimal',
+        return check_output(['git', 'blame', '--minimal', '--date=relative',
                              '-L {0},{0}'.format(line), path],
                             cwd=os.path.dirname(os.path.realpath(path)),
                             stderr=subprocess.STDOUT)
@@ -155,9 +157,8 @@ def update_status_bar(view):
             blame = blame.decode('utf-8')
             curr_user = curr_user.decode('utf-8').strip()
             user, date = parse_blame(blame)
-            time_since = time_between(date)
             user = YOU if user == curr_user else user
-            output = user + ", " + time_since
+            output = user + ", " + date
 
         view.set_status('git_blame', output)
     except:
