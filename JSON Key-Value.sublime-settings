@@ -4,5 +4,7 @@
 		"json",
 		"sublime-settings",
 		"sublime-project",
+		".madgerc",
+		".swcrc",
 	],
 }

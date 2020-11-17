@@ -7,15 +7,7 @@
                 "gopls"
             ],
             "enabled": true,
-            "languages": [
-                {
-                    "languageId": "go",
-                    "document_selector": "source.go"
-                },
-                {
-                    "languageId": "gomod",
-                }
-            ]
+            "selector": "source.go | source.gomod"
         },
         "rls": {
             "enabled": false

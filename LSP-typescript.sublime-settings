@@ -1,22 +1,5 @@
 // Settings in here override those in "LSP-typescript/LSP-typescript.sublime-settings"
 
 {
-    "languages": [
-        {
-            "languageId": "javascript",
-            "document_selector": "source.js | source.jsx"
-        },
-        {
-            "languageId": "javascriptreact",
-            "document_selector": "source.jsx | source.js.react"
-        },
-        {
-            "languageId": "typescript",
-            "document_selector": "source.ts"
-        },
-        {
-            "languageId": "typescriptreact",
-            "document_selector": "source.tsx | source.ts.react"
-        }
-    ]
+    "selector": "source.js | source.jsx | source.js.react | source.ts | source.tsx | source.ts.react"
 }
