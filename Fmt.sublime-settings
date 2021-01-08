@@ -1,0 +1,11 @@
+// Fmt Settings - User
+{
+    "rules": [
+        {
+            "selector": "source.go",
+            "cmd": ["goimports"],
+            "format_on_save": true
+        }
+    ],
+    "timeout": 10
+}

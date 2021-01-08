@@ -50,7 +50,9 @@
 	"translate_tabs_to_spaces": true,
 	"ignored_packages":
 	[
+		"Fmt",
 		"Gofmt",
+		"SublimeLinter-eslint",
 		"Vintage",
 	],
 	"font_size": 12,

@@ -6,14 +6,14 @@
                 "gopls"
             ],
             "enabled": true,
-            "selector": "source.go | source.gomod"
+            "selector": "source.go"
         },
         "rls": {
             "enabled": false
         },
         "rust-analyzer": {
             "enabled": true
-        }
+        },
     },
     "diagnostics_highlight_style": "box",
     "disabled_capabilities": [
@@ -31,4 +31,9 @@
     "show_diagnostics_severity_level": 3,
     "show_references_in_quick_panel": true,
     "show_view_status": true
+    // "log_debug": true,
+    // "log_server": [
+    //     "panel"
+    // ],
+    // "log_stderr": true
 }
