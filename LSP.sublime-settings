@@ -1,5 +1,4 @@
 {
-    "auto_show_diagnostics_panel_level": 2,
     "clients": {
         "gopls": {
             "command": [
@@ -30,7 +29,8 @@
     "show_diagnostics_in_view_status": false,
     "show_diagnostics_severity_level": 3,
     "show_references_in_quick_panel": true,
-    "show_view_status": true
+    "show_view_status": true,
+    "show_diagnostics_panel_on_save": 0
     // "log_debug": true,
     // "log_server": [
     //     "panel"
