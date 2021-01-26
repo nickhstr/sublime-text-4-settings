@@ -2,6 +2,7 @@
 	"bootstrapped": true,
 	"installed_packages":
 	[
+		"Color Highlight",
 		"Debugger",
 		"Dockerfile Syntax Highlighting",
 		"DotENV",
