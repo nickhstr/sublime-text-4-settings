@@ -4,6 +4,7 @@ time since, the current line's last edit.
 Inspiration: https://raw.githubusercontent.com/rodrigobdz/subl-gitblame-statusbar/master/git_blame_sublime_statusbar.py
 """
 
+from typing import Tuple
 import os
 import subprocess
 from subprocess import check_output
@@ -16,15 +17,9 @@ import sublime_plugin
 YOU = 'You'
 
 
-def parse_blame(blame):
+def parse_blame(blame: str) -> Tuple[str, str]:
     """
     Gets the username and date from Git blame output.
-
-    :param      blame:  Git blame output.
-    :type       blame:  str
-
-    :returns:   User and date last edited.
-    :rtype:     Tuple[str, str]
     """
     user, date = '', ''
 
@@ -51,17 +46,9 @@ def parse_blame(blame):
     return (user, date)
 
 
-def get_blame(line, path):
+def get_blame(line: int, path: str) -> bytes:
     """
     Gets blame information for the current line.
-
-    :param      line:  Line number in file.
-    :type       line:  str
-    :param      path:  Path to current file.
-    :type       path:  str
-
-    :returns:   Git blame output.
-    :rtype:     str
     """
     try:
         return check_output(['git', 'blame', '--minimal', '--date=relative',
@@ -74,18 +61,12 @@ def get_blame(line, path):
     except Exception as e:
         pass
         # print('Git blame: Unexpected error:', e)
-    return ''
+    return bytes()
 
 
-def get_current_user(path):
+def get_current_user(path) -> bytes:
     """
     Gets the current Git user.
-
-    :param      path:  Path to current file.
-    :type       path:  str
-
-    :returns:   The current user.
-    :rtype:     str
     """
     try:
         return check_output(['git', 'config', 'user.name'],
@@ -97,18 +78,12 @@ def get_current_user(path):
     except Exception as e:
         pass
         # print('Git blame: Unexpected error:', e)
-    return ''
+    return bytes()
 
 
-def time_between(date):
+def time_between(date: str) -> str:
     """
     Returns the string message of how much time has elapsed since the last edit.
-
-    :param      date:  Date of edit
-    :type       date:  str
-
-    :returns:   Time since last edit.
-    :rtype:     str
     """
     now = datetime.now()
     blame_date = datetime.strptime(date, "%Y-%m-%d %H:%M:%S")
@@ -140,11 +115,9 @@ def time_between(date):
     return "a few seconds ago"
 
 
-def update_status_bar(view):
+def update_status_bar(view: sublime.View):
     """
     Updates the status bar with the current line's Git blame info.
-
-    :type       view:  sublime.View
     """
     try:
         row, _ = view.rowcol(view.sel()[0].begin())
