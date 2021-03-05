@@ -55,8 +55,8 @@
 		"SublimeLinter-eslint",
 		"Vintage",
 	],
-	"font_face": "Fira Mono Regular",
-	"font_size": 10,
+	"font_face": "MesloLGM Nerd Font Mono",
+	"font_size": 9,
 	"added_words":
 	[
 		"monorepo",
@@ -81,4 +81,5 @@
 		"api",
 		"v1",
 	],
+	"hot_exit": "only_on_quit"
 }
