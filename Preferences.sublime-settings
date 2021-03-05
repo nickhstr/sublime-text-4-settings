@@ -55,7 +55,8 @@
 		"SublimeLinter-eslint",
 		"Vintage",
 	],
-	"font_size": 12,
+	"font_face": "Fira Mono Regular",
+	"font_size": 10,
 	"added_words":
 	[
 		"monorepo",
