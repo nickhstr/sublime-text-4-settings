@@ -37,7 +37,6 @@
 		".golangcilint-*",
 		".gometalinter-*"
 	],
-	"hardware_acceleration": "opengl",
 	"indent_guide_options":
 	[
 		"draw_normal",
