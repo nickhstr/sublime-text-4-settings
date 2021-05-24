@@ -15,10 +15,6 @@
         },
     },
     "diagnostics_highlight_style": "box",
-    "disabled_capabilities": [
-        "colorProvider",
-        "documentHighlight"
-    ],
     "document_highlight_style": "box",
     "lsp_code_actions_on_save": {
         "source.fixAll": true,
