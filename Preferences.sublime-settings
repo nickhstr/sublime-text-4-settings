@@ -35,7 +35,8 @@
 		"CVS",
 		".golangci-*",
 		".golangcilint-*",
-		".gometalinter-*"
+		".gometalinter-*",
+		"tmp*"
 	],
 	"hardware_acceleration": "opengl",
 	"indent_guide_options":
@@ -50,7 +51,6 @@
 	"translate_tabs_to_spaces": true,
 	"ignored_packages":
 	[
-		"Fmt",
 		"Gofmt",
 		"SublimeLinter-eslint",
 		"Vintage",

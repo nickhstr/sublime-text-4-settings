@@ -4,7 +4,12 @@
         {
             "selector": "source.go",
             "cmd": ["goimports"],
-            "format_on_save": true
+            "format_on_save": false
+        },
+        {
+            "selector": "text.html.markdown",
+            "cmd": ["prettier", "--loglevel", "silent", "$file"],
+            "format_on_save": false
         }
     ],
     "timeout": 10
