@@ -1,12 +1,5 @@
 // Settings in here override those in "LSP-typescript/LSP-typescript.sublime-settings"
 
 {
-    // Use globally installed typescript-language-server for now;
-    // the server has a hard-coded timeout of 20 seconds for requests,
-    // which is too short for startup times on large projects.
-    // The workaround is to increase the timeout in typescript-language-server/lib/utils.js,
-    // until it is addressed.
-    // Issue is tracked here: https://github.com/theia-ide/typescript-language-server/issues/82
-    "command": ["typescript-language-server", "--stdio"],
     "selector": "source.js | source.jsx | source.js.react | source.ts | source.tsx | source.ts.react"
 }

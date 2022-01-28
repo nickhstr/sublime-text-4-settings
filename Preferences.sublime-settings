@@ -25,7 +25,7 @@
 		"*/vendor/*"
 	],
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/Color Scheme - Default/Mariana.sublime-color-scheme",
+	"color_scheme": "Mariana.sublime-color-scheme",
 	"find_selected_text": true,
 	"folder_exclude_patterns":
 	[
@@ -38,7 +38,6 @@
 		".gometalinter-*",
 		"tmp*"
 	],
-	"hardware_acceleration": "opengl",
 	"indent_guide_options":
 	[
 		"draw_normal",
@@ -52,6 +51,8 @@
 	"ignored_packages":
 	[
 		"Gofmt",
+		"LSP-pyright",
+		"Rust Enhanced",
 		"SublimeLinter-eslint",
 		"Vintage",
 	],

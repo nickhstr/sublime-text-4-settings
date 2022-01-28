@@ -1,24 +1,9 @@
 {
-    "clients": {
-        "gopls": {
-            "command": [
-                "gopls"
-            ],
-            "enabled": true,
-            "selector": "source.go"
-        },
-        "rls": {
-            "enabled": false
-        },
-        "rust-analyzer": {
-            "enabled": true
-        },
-    },
+    "diagnostics_delay_ms": 100,
     "diagnostics_highlight_style": "box",
-    "document_highlight_style": "box",
+    "document_highlight_style": "",
     "lsp_code_actions_on_save": {
-        "source.fixAll": true,
-        "source.organizeImports": true
+        "source.fixAll": true
     },
     "lsp_format_on_save": false,
     "show_diagnostics_count_in_view_status": true,
