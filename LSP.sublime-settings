@@ -1,20 +1,21 @@
 {
-    "diagnostics_delay_ms": 100,
-    "diagnostics_highlight_style": "box",
-    "document_highlight_style": "",
-    "lsp_code_actions_on_save": {
-        "source.fixAll": true
-    },
-    "lsp_format_on_save": false,
-    "show_diagnostics_count_in_view_status": true,
-    "show_diagnostics_in_view_status": false,
-    "show_diagnostics_severity_level": 3,
-    "show_references_in_quick_panel": true,
-    "show_view_status": true,
-    "show_diagnostics_panel_on_save": 0
-    // "log_debug": true,
-    // "log_server": [
-    //     "panel"
-    // ],
-    // "log_stderr": true
+	"diagnostics_highlight_style": "box",
+	"document_highlight_style": "",
+	"lsp_code_actions_on_save": {
+		"source.fixAll": true
+	},
+	"lsp_format_on_save": false,
+	"show_diagnostics_count_in_view_status": true,
+	"show_diagnostics_in_view_status": false,
+	"show_diagnostics_severity_level": 3,
+	"show_inlay_hints": true,
+	"show_references_in_quick_panel": true,
+	"show_view_status": true,
+	"show_diagnostics_panel_on_save": 0,
+	"link_highlight_style": "none"
+	// "log_debug": true,
+	// "log_server": [
+	//     "panel"
+	// ],
+	// "log_stderr": true
 }

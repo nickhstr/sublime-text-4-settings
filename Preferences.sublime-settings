@@ -41,13 +41,13 @@
 	"indent_guide_options":
 	[
 		"draw_normal",
-		"draw_active"
+		"draw_active_single",
+		"solid"
 	],
-	"open_files_in_new_window": false,
+	"open_files_in_new_window": "never",
 	"scroll_past_end": true,
 	"show_line_endings": true,
 	"theme": "Adaptive.sublime-theme",
-	"translate_tabs_to_spaces": true,
 	"ignored_packages":
 	[
 		"Gofmt",
@@ -81,4 +81,7 @@
 		"api",
 		"v1",
 	],
+	"line_padding_top": 1,
+	"line_padding_bottom": 1,
+	"auto_complete_commit_on_tab": true,
 }
