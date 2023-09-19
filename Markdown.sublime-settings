@@ -3,6 +3,5 @@
     "spell_check": true,
     "extensions":
     [
-		"mdx"
-	],
+    ],
 }
