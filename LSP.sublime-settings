@@ -1,6 +1,6 @@
 {
 	"diagnostics_highlight_style": "box",
-	"document_highlight_style": "",
+	"document_highlight_style": "background",
 	"lsp_code_actions_on_save": {
 		"source.fixAll": true
 	},

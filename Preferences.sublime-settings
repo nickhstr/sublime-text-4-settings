@@ -1,8 +1,24 @@
 {
+	"added_words": [
+		"monorepo",
+		"utils",
+		"Redux",
+		"Koa",
+		"github",
+		"repo",
+		"dev",
+		"Moonracer",
+		"wxu",
+		"json",
+		"https",
+		"params",
+		"middleware",
+		"microservices",
+		"Xcode",
+	],
 	"always_show_minimap_viewport": true,
-	"caret_style": "smooth",
-	"binary_file_patterns":
-	[
+	"auto_complete_commit_on_tab": true,
+	"binary_file_patterns": [
 		"*.jpg",
 		"*.jpeg",
 		"*.png",
@@ -24,11 +40,11 @@
 		"*/lib/*",
 		"*/vendor/*"
 	],
+	"caret_style": "smooth",
 	"close_windows_when_empty": false,
 	"color_scheme": "Mariana.sublime-color-scheme",
 	"find_selected_text": true,
-	"folder_exclude_patterns":
-	[
+	"folder_exclude_patterns": [
 		".svn",
 		".git",
 		".hg",
@@ -38,50 +54,28 @@
 		".gometalinter-*",
 		"tmp*"
 	],
-	"indent_guide_options":
-	[
-		"draw_normal",
-		"draw_active_single",
-		"solid"
-	],
-	"open_files_in_new_window": "never",
-	"scroll_past_end": true,
-	"show_line_endings": true,
-	"theme": "Adaptive.sublime-theme",
-	"ignored_packages":
-	[
+	"font_size": 12,
+	"ignored_packages": [
 		"Gofmt",
 		"LSP-pyright",
 		"Rust Enhanced",
 		"SublimeLinter-eslint",
 		"Vintage",
 	],
-	"font_size": 12,
-	"added_words":
-	[
-		"monorepo",
-		"utils",
-		"Redux",
-		"Koa",
-		"github",
-		"repo",
-		"dev",
-		"Moonracer",
-		"wxu",
-		"json",
-		"https",
-		"params",
-		"middleware",
-		"microservices",
-		"Xcode",
-	],
-	"ignored_words":
-	[
+	"ignored_words": [
 		"Mongo",
 		"api",
 		"v1",
 	],
-	"line_padding_top": 1,
+	"indent_guide_options": [
+		"draw_normal",
+		"draw_active_single",
+		"solid"
+	],
 	"line_padding_bottom": 1,
-	"auto_complete_commit_on_tab": true,
+	"line_padding_top": 1,
+	"open_files_in_new_window": "never",
+	"scroll_past_end": true,
+	"show_line_endings": true,
+	"theme": "Adaptive.sublime-theme",
 }

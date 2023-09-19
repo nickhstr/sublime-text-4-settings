@@ -1,0 +1,10 @@
+{
+	"test:flags": [
+		"-v",
+		"-race"
+	],
+	"benchmark:flags": [
+		"-race",
+		"-run='^$'"
+	]
+}
