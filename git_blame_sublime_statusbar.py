@@ -131,7 +131,7 @@ def update_status_bar(view: sublime.View):
             curr_user = curr_user.decode('utf-8').strip()
             user, date = parse_blame(blame)
             user = YOU if user == curr_user else user
-            output = user + ", " + date
+            output = "{0} ({1})".format(user, date)
 
         view.set_status('git_blame', output)
     except:
