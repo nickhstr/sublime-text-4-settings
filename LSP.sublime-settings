@@ -7,7 +7,7 @@
 	"lsp_format_on_save": false,
 	"show_diagnostics_count_in_view_status": true,
 	"show_diagnostics_in_view_status": false,
-	"show_diagnostics_severity_level": 3,
+	"show_diagnostics_severity_level": 4,
 	"show_inlay_hints": true,
 	"show_references_in_quick_panel": true,
 	"show_view_status": true,
