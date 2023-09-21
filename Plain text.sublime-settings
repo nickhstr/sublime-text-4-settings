@@ -1,0 +1,12 @@
+{
+	"extensions":
+	[
+		"yarn.lock",
+		".browserslistrc",
+		".dockerignore",
+		"example",
+		".yarnrc",
+		".nvmrc",
+		".eslintignore",
+	],
+}

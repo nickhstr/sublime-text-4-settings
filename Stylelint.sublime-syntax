@@ -1,0 +1,8 @@
+%YAML 1.2
+---
+version: 2
+name: Stylelint
+file_extensions:
+  - .stylelintrc
+scope: source.json.stylelint
+extends: Packages/JSON/JSON.sublime-syntax
